@@ -11,9 +11,11 @@ class Utility extends Model
 
 
 	/**
-    *   Funcion: json_success.
+    *   Funcion: create_json.
     *   Explicacion: Esta funcion se encarga de convertir la data de salida en un objeto y manejarlo
-    *	como json si todo esta correctamente funcionando.
+    *	como json.
+    *   Parametros: Status - (Success, Failed, Error) , Mensaje - (Mensaje respuesta con respecto a la petición) ,
+    *   $data - (Los datos solicitados por el cliente).
     **/
 
     public static function create_json( $status , $message , $data ){

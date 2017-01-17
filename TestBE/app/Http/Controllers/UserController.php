@@ -11,6 +11,13 @@ use App\User;
 class UserController extends Controller
 {
 
+    /**
+    *   Funcion: index.
+    *   Explicacion: Esta función se encarga de suministrar una ruta hacia un formulario de prueba.
+    *   para poder verificar el api de crear usuarios.
+    *   Nota: Esta función es solo de prueba.
+    **/
+
     public function index( ){
 
         return \View::make('user.index');
@@ -18,6 +25,12 @@ class UserController extends Controller
 
     }
 
+    /**
+    *   Funcion: index.
+    *   Explicacion: Esta función se encarga de suministrar una ruta hacia un formulario de prueba.
+    *   para poder verificar el api de modificar usuarios.
+    *   Nota: Esta función es solo de prueba.
+    **/
 
     public function edit( ){
 
@@ -25,6 +38,11 @@ class UserController extends Controller
 
 
     }
+
+    /**
+    *   Funcion: Create.
+    *   Explicacion: Esta función se encarga de la creación de usuarios.
+    **/
    
     public function create(  ){
 
@@ -32,6 +50,11 @@ class UserController extends Controller
         return json_encode( $user );
 
     }
+
+    /**
+    *   Funcion: Create.
+    *   Explicacion: Esta función se encarga de listar los usuarios.
+    **/
 
     public function show(  ){
 
@@ -61,6 +84,11 @@ class UserController extends Controller
 
     }
 
+    /**
+    *   Funcion: Create.
+    *   Explicacion: Esta función se encarga de modificar usuarios.
+    **/
+
     public function update(  ){
         
         $user = User::update_u( \Input::all(  ) );
@@ -70,6 +98,11 @@ class UserController extends Controller
 
     }
 
+    /**
+    *   Funcion: Create.
+    *   Explicacion: Esta función se encarga de eliminar usuarios.
+    *   Parametro: id - (Id del usuario a ser modificado).
+    **/
 
 
     public function destroy( $id ){

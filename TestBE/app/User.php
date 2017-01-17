@@ -19,6 +19,12 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
     protected $fillable = [ 'name', 'gender' , 'company' , 'email' , 'phone' , 'address' ];
 
+    /**
+    *   Funcion: create_u.
+    *   Explicacion: Esta funcion se encarga de la creación de los usuarios.
+    *   Parametros: $data - (Los datos suministrados por el cliente).
+    **/
+
 
     public static function create_u( $data ){
 
@@ -65,6 +71,12 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
   
     }
+
+    /**
+    *   Funcion: update_u.
+    *   Explicacion: Esta funcion se encarga de la modificación de los usuarios.
+    *   Parametros: $data - (Los datos suministrados por el cliente).
+    **/
 
     public static function update_u( $data ){
 
